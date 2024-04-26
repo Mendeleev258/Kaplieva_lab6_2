@@ -129,7 +129,7 @@
   <ItemGroup>
     <ClCompile Include="Array.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="Workercpp.cpp" />
+    <ClCompile Include="Worker.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="workers.txt" />
