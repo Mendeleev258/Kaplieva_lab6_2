@@ -1,7 +1,3 @@
-#include <iostream>
-#include <fstream>
-#include <string>
-#include "Worker.h"
 #include "Array.h"
 
 std::string exp_post(std::ifstream& file_bin, int& count);
