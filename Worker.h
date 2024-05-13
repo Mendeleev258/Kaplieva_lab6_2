@@ -8,8 +8,8 @@ const int m = 35;	// max length of str
 struct Worker
 {
 private:
-	std::string name;
-	std::string post;
+	char name[m];
+	char post[m];
 	int salary;
 public:
 	Worker() {}

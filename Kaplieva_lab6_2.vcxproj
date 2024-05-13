@@ -133,7 +133,6 @@
   </ItemGroup>
   <ItemGroup>
     <Text Include="workers.txt" />
-    <Text Include="workers_bin.txt" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Array.h" />

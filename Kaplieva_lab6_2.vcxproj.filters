@@ -29,9 +29,6 @@
     <Text Include="workers.txt">
       <Filter>Файлы ресурсов</Filter>
     </Text>
-    <Text Include="workers_bin.txt">
-      <Filter>Файлы ресурсов</Filter>
-    </Text>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Worker.h">

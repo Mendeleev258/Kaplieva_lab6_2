@@ -8,12 +8,12 @@ int main()
 	std::ifstream file_txt("workers.txt");
 	if (file_txt)
 	{
-		Array arr(file_txt);
+		// Array arr(file_txt);
 		// arr.print();
 		// std::cout << "\n=======SORTED=======\n";
-		arr.soritng();
+		// arr.soritng();
 		// arr.print();
-		arr.to_binary("workers_bin.txt");
+		// arr.to_binary("workers_bin.txt");
 		std::ifstream file_bin("workers_bin.txt", std::ios::binary);
 		if (file_bin)
 		{
@@ -40,14 +40,18 @@ std::string exp_post(std::ifstream& file_bin, int& count)
 	{
 		if (worker.get_salary() > max)
 		{
+			count = 1;
 			max = worker.get_salary();
 			result = worker.get_post();
 		}
 		else 
 			if (worker.get_salary() == max)
 			{
-				count++;
-				result += ", " + worker.get_post();
+				if (result.find(worker.get_post()) == std::string::npos)
+				{
+					count++;
+					result += ", " + worker.get_post();
+				}
 			}
 	}
 	return result;

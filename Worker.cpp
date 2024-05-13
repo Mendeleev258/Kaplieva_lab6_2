@@ -2,8 +2,8 @@
 
 Worker::Worker(std::ifstream& file)
 {
-	std::getline(file, name);
-	std::getline(file, post);
+	file.getline(name, m);
+	file.getline(post, m);
 	file >> salary;
 	file.ignore();
 	if (!file.eof())
@@ -20,5 +20,5 @@ void Worker::print()
 
 int Worker::compare(const Worker& worker)
 {
-	return post.compare(worker.post);
+	return strcmp(post, worker.post);
 }
